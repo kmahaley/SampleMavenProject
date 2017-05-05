@@ -15,20 +15,19 @@ public class TopicData {
 
     private Map<Integer, Topic> mapOfTopics=new HashMap<>();
 
-    final private Topic[] topics = {
-            new Topic(1, "John", "my name is John"),
-            new Topic(2, "Danny", "danny boyle"),
-            new Topic(3, "Scarlette", "The black widow")
-    };
-
     public TopicData() {
+        Topic[] topics = {
+                new Topic(1, "John", "my name is John"),
+                new Topic(2, "Danny", "danny boyle"),
+                new Topic(3, "Scarlette", "The black widow")
+        };
         for (Topic topic : topics) {
             mapOfTopics.put(topic.getId(), topic);
         }
     }
 
     public List<Topic> getListOfTopics() {
-        return new ArrayList<Topic>(mapOfTopics.values());
+        return new ArrayList<>(mapOfTopics.values());
     }
 
     public Topic addTopic(Topic topic) {
