@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="561eaa90-4d8b-4671-8a59-c19c9a13a761" name="Default" comment="Topic data modified">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="561eaa90-4d8b-4671-8a59-c19c9a13a761" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -139,6 +138,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -742,7 +746,7 @@
       <workItem from="1490243899145" duration="1122000" />
       <workItem from="1493940647578" duration="2431000" />
       <workItem from="1493943595329" duration="7936000" />
-      <workItem from="1493955763968" duration="33000" />
+      <workItem from="1493955763968" duration="101000" />
     </task>
     <task id="LOCAL-00001" summary="Commit with usage of @Bean and service-Application works">
       <created>1493953246512</created>
@@ -772,11 +776,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493954504824</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit after stable develop branch-1">
+      <created>1493955819100</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1493955819100</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11522000" />
+    <option name="totallyTimeSpent" value="11590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="961" extended-state="0" />
@@ -832,7 +843,8 @@
     <MESSAGE value="Modified .gitignore file" />
     <MESSAGE value="Track unversioned files" />
     <MESSAGE value="Topic data modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="Topic data modified" />
+    <MESSAGE value="commit after stable develop branch-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit after stable develop branch-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
