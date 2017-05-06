@@ -1,0 +1,18 @@
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.test: DEBUG
+email: myName@domain.com
+threadPool: 1090
+app:
+  menus:
+    - title: Bank
+      name: BankOfAmerica
+      path: /bofa
+    - title: Food
+      name: CheeseCakefactory
+      path: /CCF
+  compiler:
+    timeout: 5
+    output-folder: /temp/
+  error: /error/
