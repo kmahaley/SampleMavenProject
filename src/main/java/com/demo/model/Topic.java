@@ -15,16 +15,22 @@ public class Topic {
     /**
      * Short description of the topic
      */
-    private String descr;
+    private String description;
 
     /**
      * Id of the topic
      */
     private int id;
 
-    public Topic(int id, String name, String descr) {
+    public Topic(){
+        /*
+         *Default method
+         */
+    }
+
+    public Topic(int id, String name, String description) {
         this.name = name;
-        this.descr = descr;
+        this.description = description;
         this.id = id;
     }
 
@@ -36,12 +42,12 @@ public class Topic {
         this.name = name;
     }
 
-    public String getDescr() {
-        return descr;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescr(String descr) {
-        this.descr = descr;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public int getId() {
