@@ -1,6 +1,7 @@
 package com.demo.config;
 
 import com.demo.data.ApplicationConfigurations;
+import com.demo.data.GlobalProperties;
 import com.demo.data.TopicData;
 import com.demo.service.TopicService;
 import org.springframework.context.annotation.Bean;
@@ -26,5 +27,10 @@ public class configuration {
     @Bean
     public ApplicationConfigurations getApplicationConfigurations() {
         return new ApplicationConfigurations();
+    }
+
+    @Bean
+    public GlobalProperties globalProperties(){
+        return new GlobalProperties();
     }
 }

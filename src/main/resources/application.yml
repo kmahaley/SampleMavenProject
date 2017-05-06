@@ -1,7 +1,7 @@
 logging:
   level:
-    org.springframework.web: ERROR
-    com.test: DEBUG
+    org-level: ERROR
+    com-error: DEBUG
 email: myName@domain.com
 threadPool: 1090
 app:

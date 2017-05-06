@@ -4,8 +4,10 @@ import java.util.List;
 import javax.websocket.server.PathParam;
 
 import com.demo.data.ApplicationConfigurations;
+import com.demo.data.GlobalProperties;
 import com.demo.model.Topic;
 import com.demo.service.TopicService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,14 +23,23 @@ public class TopicController {
 
     private ApplicationConfigurations applicationConfigurations;
 
-    public TopicController(TopicService topicService, ApplicationConfigurations applicationConfigurations) {
+    private GlobalProperties globalProperties;
+
+    @Autowired
+    public TopicController(
+            TopicService topicService,
+            ApplicationConfigurations applicationConfigurations,
+            GlobalProperties globalProperties) {
+
         this.topicService = topicService;
         this.applicationConfigurations = applicationConfigurations;
+        this.globalProperties = globalProperties;
     }
 
     @RequestMapping(value = "/topics", method = RequestMethod.GET)
     public List<Topic> getTopics() {
         System.out.println(applicationConfigurations.getEmail()+" -> "+applicationConfigurations.getThreadPool());
+        System.out.println(globalProperties.getComError()+" -> "+globalProperties.getOrgLevel());
         return topicService.getTopicsFromService();
     }
 
