@@ -1,7 +1,7 @@
 logging:
   level:
     org-level: ERROR
-    com-error: DEBUG
+    com-error: YAMLFILE
 email: myName@domain.com
 threadPool: 1090
 app:
