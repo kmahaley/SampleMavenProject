@@ -12,6 +12,7 @@ import java.util.function.ObjIntConsumer;
 import java.util.function.ToDoubleBiFunction;
 import java.util.stream.Collectors;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.util.StringUtils;
 
 /**

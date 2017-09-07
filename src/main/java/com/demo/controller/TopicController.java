@@ -7,7 +7,6 @@ import com.demo.data.ApplicationConfigurations;
 import com.demo.data.GlobalProperties;
 import com.demo.model.Topic;
 import com.demo.service.TopicService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,7 +24,6 @@ public class TopicController {
 
     private GlobalProperties globalProperties;
 
-    @Autowired
     public TopicController(
             TopicService topicService,
             ApplicationConfigurations applicationConfigurations,
